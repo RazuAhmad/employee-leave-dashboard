@@ -58,8 +58,6 @@
 }
 
 /* Dashboard section area starts */
-.dashboard-section-area {
-}
 
 .add-new-leave-area {
   border-right: 0.5px solid var(--neutral-neutral-80, #c7c6ca);
@@ -75,7 +73,7 @@
 
   box-shadow: 0px 2px 7px -7px rgba(0, 0, 0, 0.11);
   padding-top: 24px;
-  height: 90vh;
+  height: 100%;
 }
 
 .add-new-leave-btn {
@@ -105,7 +103,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 24px */
+  /* line-height: 150%; 24px */
   letter-spacing: -0.352px;
 }
 
@@ -121,7 +119,7 @@
 
 .dashboard-btn {
   gap: 24px;
-  padding: 16px 65px 16px 24px;
+  padding: 16px 0 16px 24px;
   margin-bottom: 8px;
 }
 
@@ -139,6 +137,7 @@
 
 .all-leave-type-area {
   margin-bottom: 24px;
+  padding: 0 14px;
 }
 
 .leave-type {
@@ -149,7 +148,19 @@
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.leave-type text {
+.vacation {
+}
+
+.sick {
+}
+
+.holidays {
+}
+
+.unpaid-leave {
+}
+
+.leave-type-text {
   color: var(--text, #46464a);
   font-family: Manrope;
   font-size: 24px;
@@ -228,13 +239,98 @@
   padding-left: 33px;
 }
 
+.your-network-text {
+  color: var(--text, #46464a);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.528px;
+}
+
 .all-filters-area {
   gap: 16px;
+  color: var(--text, #46464a);
+  font-feature-settings: "calt" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.28px;
 }
 
 .filter {
   padding: 4px 12px;
-  border-radius: 2px;
-  border: 0.5px solid var(--neutral-neutral-60, #919094);
-  background: var(--neutral-neutral-99, #fefbff);
+  gap: 41px;
+  border-radius: 5px;
+  border: 0.5px solid #919094;
+  /* background-image: url("../images/arrow-down.svg");
+  background-position: 83px center;
+  background-repeat: no-repeat; */
+}
+
+.employee-details {
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--white, #fff);
+
+  /* S */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.employee-name {
+  color: var(--text, #46464a);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.352px;
+  margin-bottom: 4px;
+}
+
+.empoyee-position {
+  color: var(--icon-default, #77777a);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.308px;
+}
+
+.leave-status {
+  color: var(--text, #46464a);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.352px;
+}
+
+.leave-date-icon-area {
+  color: var(--icon-default, #77777a);
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 13px */
+  letter-spacing: -0.286px;
+}
+
+.leave-start-end-date-container p:nth-child(1) {
+  margin-bottom: 8px;
+}
+
+.date-text {
+  color: var(--text, #46464a);
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.286px;
 }
